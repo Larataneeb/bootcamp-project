@@ -75,4 +75,11 @@ module.exports = gql`
   type Error {
     message: String
   }
+
+  type UserFriends {
+    friends: [User!]!
+    sugfriends: [User!]!
+    myrequests: [User!]!
+    friendrequests: [User!]!
+  }
 `
